@@ -1,0 +1,135 @@
+<html>
+    <head>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<script src="functions.js"></script>
+</head>
+<body class="main_page_body" onload="getbackround(); get_countries('countries_select_Dep'); get_countries('countries_select_Arv');">
+    <div id="navbar">
+        <div id="nav1">
+                <div>
+                    <img src="Pictures\cheflogo.png"  width="55" height="55"/>
+                </div>
+                  <div>
+                      
+                   <button onclick="showCars()" id="cars_navbar" class="nav_bar_button ">
+      Cars
+      </button>
+                    
+                  </div>
+                  <div>
+                          <button  onclick="showHotels()" id="hotels_navbar" class="nav_bar_button">
+      Hotels
+      </button>
+                    </div>
+                    <div>
+                          <button  onclick="showFlights()" id="flights_navbar" class="active">
+      Flights
+      </button>
+                    </div>
+          </div>
+          <div id="nav2">
+                    <div class="sign_buton">
+                          <button onclick="showSignin()" class="nav_bar_button">
+            Sign in
+          </button>
+                          </div>
+                          <div class="sign_buton">
+                                  <button onclick="showSignup()" class="nav_bar_button">
+                    Sign up
+                  </button>
+                    </div>
+                    </div>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div id="modal-content" class="modal-content" class="spaced_verticly">
+           </div>
+    </div>
+        <div id="main_page_flights">
+        <div id="mode" >
+        <div class="mode_box" onclick="showCars();">Cars</div>
+        <div class="mode_box" onclick="showHotels();">Hotels</div>
+        <div class="curent_mode" onclick="showFlights();">Flights</div>
+        </div>
+        
+        
+        
+          
+                <form>
+                    <div class="flights_inputs">
+                       <div id="from" class="spaced">
+                       <div class="input_box">
+                               <p>Departure country</p>
+                               <select id="countries_select_Dep" onchange="get_citys('countries_select_Dep','city_select_Dep');"><option> </option></select>
+                       </div>
+                       <div class="input_box" >
+                               <p>Departure city</p>
+                               <select id="city_select_Dep">
+                                    <option value="null">select country first</option>
+                                </select>
+                       </div>
+                   </div>
+                   <div id="to" class="spaced">
+                        <div class="input_box">
+                                <p>Arrival country</p>
+                                <select id="countries_select_Arv" onchange="get_citys('countries_select_Arv','city_select_Arv');"><option> </option></select>
+                        </div>
+                        <div class="input_box" >
+                                <p>Arrival city</p>
+                                <select id="city_select_Arv">
+                                        <option value="null">select country first</option>
+                                    </select>
+                        </div>
+                    </div>
+                   
+                   <div  class="spaced">
+                       <div class="input_box">
+                               <p>Departure date</p>
+                           <input type="date" id="date" name="pick_up_date" > 
+                       </div> 
+                    </div>
+                   
+                       <div class="input_box"> 
+                        <button class="submitbutton" type="button"  name="search" onclick="ShowSearchResults_flights();" > search</button>
+                       </div>
+                    </div>
+                </div>
+           </form>
+
+
+<div id="footer">
+
+    
+        <div>
+            <h2>
+                    What is CHeF?
+            </h2>
+            <p>
+                    CHeF is a service for traveling,<br> it includes car rentals, <br>flight booking and hotel <br>booking. 
+            </p>
+
+        </div>
+        <div>
+            <h2>
+                    Why should I choose CHeF?
+            </h2>
+            <p>
+                    CHeF has a unique<br>rating system based on<br>food, so if you <br>like to eat while traveling<br> CHeF is for you! 
+
+            </p>
+
+        </div>
+        <div>
+            <h2>
+                    What does CHeF stand for?
+            </h2>
+            <img src="Pictures\chefstandfor.png" height="225" width="250"/>
+
+        </div>
+    
+
+    </div>
+    </body>
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+
+div#navbar {
+    justify-content: space-between;
+    display: flex;
+    background-color: #919191;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+        
+  }
+  .main_page_signup{
+    position: fixed;
+    top:20%;
+    left:39%;
+  }
+  .signup_form{
+   
+display: flex;
+flex-direction: column;
+    justify-content: space-around;
+    height: 380px;
+    width: 300px;
+    background-color: #7f7f7f;
+    border-width: 10px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  .main_page_signin{
+    position: fixed;
+    top:28%;
+    left:39%;
+
+  }
+  .signin_form{
+    display: flex;
+flex-direction: column;
+    justify-content: space-around;
+    height: 250px;
+    width: 300px;
+    background-color: #7f7f7f;
+    border-width: 10px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+
+  }
+  #mode{
+      margin-left: 7px;
+  }
+  div.cars_inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    height: 100px;
+    background-color: #7f7f7f;
+    border-width: 10px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  div.hotel_inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 1250px;
+    height: 125px;
+    background-color: #7f7f7f;
+    border-width: 10px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  div.flights_inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 1250px;
+    height: 125px;
+    background-color: #7f7f7f;
+    border-width: 10px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  
+div#nav1{
+    display: flex; 
+    justify-content: flex-start;
+}
+div#nav2{
+
+    display: flex; 
+
+}
+.spaced{
+    display: flex; 
+    justify-content: space-around;
+}
+.spaced_to_wall{
+    display: flex; 
+    justify-content: space-between;
+}
+.has_padding{
+    padding-right:135; 
+}
+div#mode{
+    display: flex;
+}
+div#main_page_cars{
+    
+    position: fixed;
+    left:13%;
+    top: 27%;
+}
+div#main_page_hotels{
+    
+    position: fixed;
+    left:14%;
+    top: 27%;
+}
+div#main_page_flights{
+    
+    position: fixed;
+    left:16%;
+    top: 27%;
+}
+#footer {
+    justify-content: space-around;
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #707070;
+    color: black;
+    text-align: center;
+
+  }
+  .input_box{
+      margin: 25px;
+  }
+.mode_box{
+    width:108;
+    height:26;
+    text-align: center;
+    margin-left:1px; 
+background-image: url("Pictures/mode_backround.png");
+background-position: center;
+background-size: cover;
+
+}
+.curent_mode{
+    width:108;
+    height:26;
+    text-align: center;
+    margin-left:1px; 
+background-image: url("Pictures/mode_backround_activated.png");
+background-position: center;
+background-size: cover;
+
+}
+.nav_bar_button{
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   width: 200px;
+   height: 55px;
+   font-size: 22px;
+   background: transparent;
+   border: transparent;
+  }
+  button.active{
+      cursor:pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 200px;
+    height: 55px;
+    font-size: 22px;
+    border: transparent;
+      background-color: #363434;
+      color: white;
+  }
+  .nav_bar_button:hover:not(.active) {
+    cursor:pointer;
+    background-color: rgb(88, 87, 87);
+    color: white;
+  }
+  .mode_box:hover:not(.curent_mode){
+    cursor:pointer; 
+    color: white;
+  }
+  .sign_title{
+    text-align: left;
+align-self: left;
+    font-weight: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 0px;
+    margin-top:20px;
+  }
+  body.main_page_body{
+      background-image: url("Pictures/backround1.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  body.search_page_body{
+    background-color: #a1a1a1;
+
+    background-size: 100%;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .submitbutton{
+    text-align: center;
+    align-self: center;
+      margin:10px;
+      margin-left: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+      border: transparent;
+      background-color: #504e4e;
+      color: white;
+      border-radius: 4px;
+      width: 80px;
+      height:50px;
+  }
+  .submitbutton:hover{
+      cursor: pointer;
+
+      background-color: #302e2e;
+  }
+  h1{
+      color: black;
+font-weight: 100;
+      font-size: 45px;
+  }
+  .spaced_verticly{
+    display: flex;
+    flex-direction: column;
+  }
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+
+  .modal-content {
+    background-color:#a1a1a1; 
+    overflow: auto;
+    width:100%;
+    height: 100%;
+  }
+  
+.stars{
+  color: gold;
+  font-size: 40px;
+}
+.sign_buton{
+  display: none;
+}
+  .close {
+    color: rgb(63, 63, 63);;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+    margin:15px;
+    margin-top: 0px;
+  }
+  .close:hover {cursor:pointer;
+    color: white;}
+.search_reasult{
+  width: 850px;
+  height: 375px;
+    background-color: #504e4e;
+    border-radius: 15px;
+    margin: 30px;
+}
+.detail_h{
+ font-weight: bold;
+ font-size: 22px;
+ margin-bottom: 0px;
+}
+.detail{
+margin-top: 1px;
+}
+
+.reasult_content{
+display: flex;
+justify-content:space-evenly;
+align-content: flex-start;
+}
+.reasult_name{
+  text-align: center;
+  font-size: 32px;
+  color: #504e4e;
+
+}
+.countries_select{
+  
+}
+.reasult_thumbnail{
+  width:400px;
+  height:275px;
+  border-color: black;
+  border-width: 5px;
+  border-radius: 3px;
+  border-style: solid;
+  
+}

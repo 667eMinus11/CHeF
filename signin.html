@@ -1,0 +1,74 @@
+<html>
+    <head>
+            <link href="style.css" rel="stylesheet" type="text/css"/>
+            <script src="functions.js"></script>            
+    </head>
+    <body class="search_page_body" onload="getbackround();">
+            <div id="navbar">
+                    <div id="nav1">
+                            <div>
+                                <img src="Pictures\cheflogo.png"  width="55" height="55"/>
+                            </div>
+                              <div>
+                                  
+                               <button onclick="showCars()" id="cars_navbar" class="nav_bar_button ">
+                  Cars
+                  </button>
+                                
+                              </div>
+                              <div>
+                                      <button  onclick="showHotels()" id="hotels_navbar" class="nav_bar_button">
+                  Hotels
+                  </button>
+                                </div>
+                                <div>
+                                      <button  onclick="showFlights()" id="flights_navbar" class="nav_bar_button">
+                  Flights
+                  </button>
+                                </div>
+                      </div>
+                      <div id="nav2">
+                        <div>
+                              <button onclick="showSignin()" class="active">
+                Sign in
+              </button>
+                              </div>
+                              <div>
+                                      <button onclick="showSignup()" class="nav_bar_button">
+                        Sign up
+                      </button>
+                        </div>
+                        </div>
+
+                    </div>
+                    <div class="main_page_signin">
+                    <div id="mode" >
+                                <div class="curent_mode" onclick="showSignin();">SignIn</div>
+                                <div class="mode_box" onclick="showSignup();">SignUp</div>
+        </div>
+                       <div class="signin_form">
+                        <form>
+                                <div>
+                                        <p class="sign_title">
+                                username:
+                                        </p>
+                                <input type="text" name="username" value="username">
+                        </div>
+                                
+                        <div>
+                                <p class="sign_title">
+                                password:
+                                </p>
+                                <input type="password" name="password" >
+                        </div>
+
+                        <div>
+                        
+                                <input class="submitbutton" type="submit" value="Submit">
+                        </div>
+                              </form>
+                        </div>
+
+                </div>
+    </body>
+</html>

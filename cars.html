@@ -1,0 +1,132 @@
+<html>
+    <head>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<script src="functions.js"></script>
+</head>
+<body class="main_page_body" onload="getbackround(); get_countries('countries_select');">
+        <div id="navbar">
+                <div id="nav1">
+                      <div>
+                          <img src="Pictures\cheflogo.png"  width="55" height="55"/>
+                      </div>
+                        <div>
+                            
+                         <button onclick="showCars()" id="cars_navbar" class="active ">
+            Cars
+            </button>
+                          
+                        </div>
+                        <div>
+                                <button  onclick="showHotels()" id="hotels_navbar" class="nav_bar_button">
+            Hotels
+            </button>
+                          </div>
+                          <div>
+                                <button  onclick="showFlights()" id="flights_navbar" class="nav_bar_button">
+            Flights
+            </button>
+                          </div>
+                </div>
+                <div id="nav2">
+                          <div class="sign_buton">
+                                <button onclick="showSignin()" class="nav_bar_button">
+                  Sign in
+                </button>
+                                </div>
+                                <div class="sign_buton">
+                                        <button onclick="showSignup()" class="nav_bar_button">
+                          Sign up
+                        </button>
+                          </div>
+                          </div>
+            </div>
+<div id="modal" class="modal">
+<div id="modal-content" class="modal-content" class="spaced_verticly">
+   
+</div>    
+</div>
+<div id="main_page_cars">
+<div id="mode" >
+<div class="curent_mode" onclick="showCars();">Cars</div>
+<div class="mode_box" onclick="showHotels();">Hotels</div>
+<div class="mode_box" onclick="showFlights();">Flights</div>
+</div>
+
+
+
+   
+
+        <form>
+            <div class="cars_inputs">
+               <div id="place" class="spaced">
+               <div class="input_box">
+                       <p>country</p>
+                       <select id="countries_select" onchange="get_citys('countries_select','city_select');"><option> </option></select>
+               </div>
+               <div class="input_box" >
+                       <p>city</p>
+                       <select id="city_select">
+                       <option value="null">select country first</option>
+                       </select>
+               </div>
+           </div>
+           
+           <div id="date" class="spaced">
+               <div class="input_box">
+                       <p>At what date</p>
+                   <input type="date" id="pick_up_date" name="pick_up_date" > 
+               </div>
+               <div class="input_box">
+                       <p>For how many days</p>
+                   <input type="number" id="time_for" name="time_for" > 
+               </div>
+               <div class="input_box">
+                <p>Car type</p>
+                <select id="car_type" name="car_type">
+                    <option value="suv">Suv (6 pasengers + driver)</option>
+                    <option value="private">private (3 pasengers + driver)</option>
+                    <option value="sports">sports car (1 pasenger + driver) </option>
+                    <option value="trailer">trailer (mobile home fit for 3 passenger + driver)</option>
+                  </select>
+        </div>
+           </div>
+               <div class="input_box"> 
+                   <button class="submitbutton" type="button"  name="search" onclick="ShowSearchResults_cars();" > search</button>
+               </div>
+            </div>
+   </form>
+</div>
+   <div id="footer">
+
+    
+        <div>
+            <h2>
+                    What is CHeF?
+            </h2>
+            <p>
+                    CHeF is a service for traveling,<br> it includes car rentals, <br>flight booking and hotel <br>booking. 
+            </p>
+
+        </div>
+        <div>
+            <h2>
+                    Why should I choose CHeF?
+            </h2>
+            <p>
+                    CHeF has a unique<br>rating system based on<br>food, so if you <br>like to eat while traveling<br> CHeF is for you! 
+
+            </p>
+
+        </div>
+        <div>
+            <h2>
+                    What does CHeF stand for?
+            </h2>
+            <img src="Pictures\chefstandfor.png" height="225" width="250"/>
+
+        </div>
+    
+
+    </div>
+    </body>
+    </html>
